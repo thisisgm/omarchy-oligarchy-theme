@@ -1,0 +1,5 @@
+# Transient authority wears gold; a card that is merely open does not. This
+# keeps menus, launcher and tooltips off the accent so gold stays scarce.
+[hyprland]
+active-border            = "#dcae5e"
+active-border-foreground = "#45485e"
