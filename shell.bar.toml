@@ -1,0 +1,9 @@
+# The bar sits one step below the canvas so windows read as raised above it.
+[bar]
+background       = "#15161f"
+background-alpha = 1.0
+text             = "#bcc1e2"
+active           = "#f35681"
+scale-with-font  = true
+size-horizontal  = 26
+size-vertical    = 28

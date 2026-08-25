@@ -1,0 +1,71 @@
+# Oligarchy: everything is one cold material, and gold is the only exception.
+#
+# Three rules hold the palette together:
+#
+#   1. The ground is uniform. Five surfaces on a single hue (OKLCH 278, the
+#      chroma-weighted mean hue of this theme's own wallpapers), stepping by
+#      an even 0.0340 in OKLab lightness. No surface is special.
+#   2. Gold is the only colour with a job. It means focus, and nothing else
+#      is allowed to mean focus. It is the only warm colour in the chrome.
+#   3. Rank is measured, not asserted. Every colour below clears WCAG AA
+#      (4.5:1) against all four surfaces, so nothing here is decorative.
+#
+# The ANSI ring is Tokyo Night, repaired rather than replaced. Tokyo Night's
+# own ring collapses under colour-vision deficiency: blue and bright_magenta
+# sit 0.0031 apart in OKLab worst-case, yellow and green 0.0085, and brown
+# fails AA outright at 1.98:1. Solving for worst-case separation across
+# normal, protan, deutan and tritan vision lifts the tightest pair that means
+# two different things to 0.0326, a factor of 10.5, while every colour stays
+# close enough to its seed to still answer to its name.
+
+mode = "dark"
+
+# The accent. Focus, active borders, selected rows. Nothing else.
+accent = "#dcae5e"
+
+# Surface ladder. One hue, even lightness steps, chroma rising with lightness
+# so the deepest surface is nearest to black. Depth is the step, not a shadow.
+darker_background  = "#0e0f16"   # deepest: code blocks, lock screen
+dark_background    = "#15161f"   # chrome: bar, sidebars
+background         = "#1c1e29"   # canvas: terminal, app bodies
+lighter_background = "#242633"   # raised: inputs, cards
+selection          = "#2c2e3d"   # selected text and rows
+
+# Ink. Same cold hue as the ground: the theme's warmth is rationed to the
+# accent. The floor is set by contrast, not by taste. muted is bright-black
+# and comments; at 5.06:1 on the canvas it is recessed but legible, which is
+# a deliberate break from Tokyo Night's 2.2:1.
+muted             = "#888da7"
+dark_foreground   = "#999ebc"   # secondary and dimmed
+foreground        = "#afb5d8"   # content ink, 8.23:1 on the canvas
+light_foreground  = "#bcc1e2"   # chrome ink: bar text, graph labels
+bright_foreground = "#ced3f1"   # emphasis
+
+# ANSI ring. Hue kept near Tokyo Night so the palette stays recognisable;
+# lightness and chroma moved only where a pair was indistinguishable. red
+# carries the most chroma of the ring, because an error that fails to alarm
+# has failed.
+red     = "#f35681"
+orange  = "#f18563"
+yellow  = "#e4a023"
+green   = "#b4db93"
+cyan    = "#269aad"
+blue    = "#6d9bff"
+magenta = "#9c79e9"
+brown   = "#b38468"   # bronze: the accent, spent
+
+# Bright ring. A bright variant separates from its base by lightness, not by
+# hue, so emphasis survives colour blindness. bright_green leads bright_red
+# by at least 0.21 in lightness under every vision type, so a diff's + is
+# still the lighter of the pair when hue is gone.
+bright_red     = "#ff6f85"
+bright_yellow  = "#ffa86d"
+bright_green   = "#cbff96"
+bright_cyan    = "#3cc9e5"
+bright_blue    = "#87acff"
+bright_magenta = "#cab3f9"
+
+# The focused window is the only window wearing gold. Unfocused edges are the
+# next step up the surface ladder, 1.40:1 against the canvas: felt, not seen.
+hyprland_active_border   = "rgb(dcae5e)"
+hyprland_inactive_border = "rgb(343748)"

@@ -1,0 +1,30 @@
+# The stock template deliberately mirrors hover and focus so both read as one
+# state. Oligarchy separates them: hover is neutral, focus alone is gold, so a
+# keyboard user can always see where they are.
+[controls]
+normal-color        = "#bcc1e2"
+normal-fill-alpha   = 0.03
+normal-border       = "#bcc1e2"
+normal-border-width = 1
+normal-border-alpha = 0.22
+
+hover-cursor-color        = "#bcc1e2"
+hover-cursor-fill-alpha   = 0.07
+hover-cursor-border       = "#bcc1e2"
+hover-cursor-border-width = 1
+hover-cursor-border-alpha = 0.34
+
+focus-color        = "accent"
+focus-fill-alpha   = 0.10
+focus-border       = "accent"
+focus-border-width = 1
+focus-border-alpha = 0.95
+
+selected-color        = "#afb5d8"
+selected-fill-alpha   = 0.14
+selected-border       = "#afb5d8"
+selected-border-width = 0
+selected-border-alpha = 1.0
+
+pressed-fill-alpha   = 0.20
+selection-fill-alpha = 0.35
